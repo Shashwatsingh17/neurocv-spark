@@ -57,8 +57,8 @@ export default function Landing() {
           <div className="hidden md:flex items-center space-x-8">
             <a href="#features" className="text-muted-foreground hover:text-foreground transition-colors">Features</a>
             <a href="#how-it-works" className="text-muted-foreground hover:text-foreground transition-colors">How it Works</a>
-            <Button variant="outline" size="sm">Sign In</Button>
-            <Button variant="default" size="sm" onClick={() => navigate('/dashboard')}>
+            <Button variant="outline" size="sm" onClick={() => navigate('/auth')}>Sign In</Button>
+            <Button variant="default" size="sm" onClick={() => navigate('/auth')}>
               Get Started
             </Button>
           </div>
@@ -92,7 +92,7 @@ export default function Landing() {
                 <Button 
                   size="lg" 
                   className="bg-gradient-to-r from-primary to-accent hover:opacity-90 text-primary-foreground glow-box animate-pulse-glow"
-                  onClick={() => navigate('/dashboard')}
+                  onClick={() => navigate('/auth')}
                 >
                   Build My Resume Now
                   <Zap className="w-4 h-4 ml-2" />
@@ -208,7 +208,7 @@ export default function Landing() {
             <Button 
               size="lg" 
               className="bg-gradient-to-r from-primary to-accent hover:opacity-90 text-primary-foreground glow-box animate-pulse-glow"
-              onClick={() => navigate('/dashboard')}
+              onClick={() => navigate('/auth')}
             >
               Start Building Now - It's Free
               <Zap className="w-4 h-4 ml-2" />
